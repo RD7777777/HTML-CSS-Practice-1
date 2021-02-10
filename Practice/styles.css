@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+
+* {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+.Homepage{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:hsl(204, 43%, 93%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin: 100px 300px 80px 300px;
+}
+
+.joinCommunity {
+    background-color: white;
+    padding: 20px 0px 0px 40px;
+    border-radius: 10px 10px 0px 0px;
+    grid-area: 1/1/1/3;
+}
+    .joinCommunity h1 {
+        color: hsl(179, 62%, 43%);
+        font-size: 25px;
+    }
+    .joinCommunity h2 {
+        color: hsl(71, 73%, 54%);
+    }
+    .joinCommunity h3 {
+        color: hsl(218, 22%, 67%);
+    }
+
+.subscription {
+    background-color:hsl(179, 62%, 43%);
+    grid-area: 2/1/2/1;
+    padding: 25px 30px 100px 50px;
+    border-radius: 0px 0px 0px 10px;
+}
+    .subscription h1 {
+        color: #f0f0f0;
+    }
+    .subscription h4 {
+        color: #f0f0f0;
+    }
+    .subscription span {
+        font-size: 20px;
+    }
+    .subscription p {
+        color: #f0f0f0;
+    }
+    .subscription button {
+        width: 280px;
+        height: 50px;
+        border: none;
+        background-color:hsl(71, 73%, 54%);
+        color: #f0f0f0;
+        border-radius: 6px;
+        transition: ease-out 0.1s;
+    }
+       .subscription button:hover {
+           box-shadow: inset 300px 0 0 0 #008080;
+           border-radius: 6px;
+       }
+
+.whyUs {
+    background-color:hsl(179, 52%, 61%);
+    grid-area: 2/2/2/2;
+    padding: 20px;
+    border-radius: 0px 0px 10px 0px;
+}
+    .whyUs h1 {
+        color: white;
+        margin: 25px 0px 30px 25px;
+    }
+    .whyUs li {
+        list-style-type: none;
+        color: white;
+    }
+
+@media (max-width: 900px) {
+    .grid-container {
+        width: 92%;
+        display: block;
+        margin: 10px auto;
+        }
+    .joinCommunity {
+        border-radius: 0px 0px 0px 0px;
+        padding: 20px;
+    }
+    .subscription {
+        border-radius: 0px 0px 0px 0px;
+    }
+    .whyUs {
+        border-radius: 0px 0px 0px 0px;
+    }
+}
