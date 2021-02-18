@@ -17,8 +17,13 @@ html {
     --yellow: #c0df34;
     --greyblue: #98a6bd;
     --ltgreyblue: #a9b7d1;
-    --paddingx: 1.8rem;
-    --paddingy: 1.5rem;
+    --paddingx: 2.5rem;
+    --paddingy: 2.3rem;    
+    --top-left-rounded-edge: 0.3rem 0 0 0;
+    --top-right-rounded-edge: 0 0.3rem 0 0;
+    --top-rounded-edge: 0.3rem 0.3rem 0 0;
+    --btm-right-rounded-edge: 0 0 0.3rem 0;
+    --btm-left-rounded-edge:  0 0 0 0.3rem;
 }
 
 #home-body {
@@ -59,8 +64,9 @@ html {
         overflow: hidden;
     }
     .community {
-        background-color:white;
+        background-color: white;
         grid-area: community;
+        border-radius: var(--top-rounded-edge);
     }
         .community h2 {
             color: var(--cyan);
@@ -81,12 +87,13 @@ html {
     .month {
         background-color: var(--cyan);
         grid-area: month;
+        border-radius: var(--btm-left-rounded-edge);
     }
         .month h2 {
             color: white;
         }
         .dollar-month {
-            color:var(--ltgreyblue);
+            color: var(--ltgreyblue);
         }
         .full-access {
             color: var(--snowwhite);
@@ -99,24 +106,24 @@ html {
         .month button {
             background-color: var(--yellow);
             color: white;
-            border-radius: 0.3rem;
+            margin: 1.25rem 0 0 0.6rem;
+            border-radius: 0.35rem;
             border-color: var(--yellow);
-            height: 50px;
-            width: 290px;
-            font-size: 16px;
+            height: 2.8rem;
+            width: 15rem;
             font-weight: 400;
-            transition: ease-out 0.1s;
-            margin-right: 0.7rem;
+            transition: ease-out 0.2s;
         }
         .month button:hover {
             box-shadow: inset 300px 0 0 0 #008080;
             border-color:#008080;
-            border-radius: 0.3rem;
+            border-radius: 0.35rem;
         }
 
     .whyUs {
         background-color: var(--ltcyan);
         grid-area: whyUs;
+        border-radius: var(--btm-right-rounded-edge);
     }
         .whyUs h2 {
             color: white;
@@ -139,18 +146,16 @@ html {
     }
         .home-container section {
             box-shadow: 0.1rem 0.1rem 0.1rem grey;
+            border-radius: 0.3rem;
         }
         .community {
-            border-radius: 0.3rem;
             grid-area: community;
             margin-top: 1rem;
         }
         .month {
-            border-radius: 0.3rem;
             grid-area: month;
         }
         .whyUs {
-            border-radius: 0.3rem;
             grid-area: whyUs;
         }
 }
