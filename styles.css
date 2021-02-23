@@ -50,7 +50,7 @@ html {
         line-height: 1.75;
     }
 
-.home-container {
+.home-card {
     display: grid;
     width: 50%;
     margin: 5rem;
@@ -59,37 +59,37 @@ html {
     grid-template-areas: "community community"
                          "month whyUs";
 }
-    .home-container section {
+    .home-card section {
         padding: var(--paddingx) var(--paddingy);
         overflow: hidden;
     }
-    .community {
+    .top-card {
         background-color: white;
         grid-area: community;
         border-radius: var(--top-rounded-edge);
     }
-        .community h2 {
+        .top-card h2 {
             color: var(--cyan);
             font-size: 1.6rem;
         }
-        .community time {
+        .top-card time {
             color: var(--yellow);
             font-weight: 700;
         }
-        .community h3 {
+        .top-card h3 {
             color: var(--yellow);
             font-weight: 700;
         }
-        .community p {
+        .top-card p {
             color: var(--greyblue);
         }
 
-    .month {
+    .middle-card {
         background-color: var(--cyan);
         grid-area: month;
         border-radius: var(--btm-left-rounded-edge);
     }
-        .month h2 {
+        .middle-card h2 {
             color: white;
         }
         .dollar-month {
@@ -98,12 +98,12 @@ html {
         .full-access {
             color: var(--snowwhite);
         }
-        .month span {
+        .middle-card span {
             color: white;
             font-weight: 700;
             font-size: 1.6rem;
         }
-        .month button {
+        .middle-card button {
             background-color: var(--yellow);
             color: white;
             margin: 1.25rem 0 0 0.6rem;
@@ -114,28 +114,28 @@ html {
             font-weight: 400;
             transition: ease-out 0.2s;
         }
-        .month button:hover {
+        .middle-card button:hover {
             box-shadow: inset 300px 0 0 0 #008080;
             border-color:#008080;
             border-radius: 0.35rem;
         }
 
-    .whyUs {
+    .btm-card {
         background-color: var(--ltcyan);
         grid-area: whyUs;
         border-radius: var(--btm-right-rounded-edge);
     }
-        .whyUs h2 {
+        .btm-card h2 {
             color: white;
         }
-        .whyUs li {
+        .btm-card li {
             color: var(--snowwhite);
             list-style-type: none;
             font-size: 0.9rem;
         }
 
 @media (max-width: 900px) {
-    .home-container {
+    .home-card {
         width: 90%;
         margin: auto;
         padding: 1.8rem;
@@ -144,18 +144,18 @@ html {
         grid-template-areas: "community" "month" "whyUs";
         grid-gap: 1rem;
     }
-        .home-container section {
+        .home-card section {
             box-shadow: 0.1rem 0.1rem 0.1rem grey;
             border-radius: 0.3rem;
         }
-        .community {
+        .top-card {
             grid-area: community;
             margin-top: 1rem;
         }
-        .month {
+        .middle-card {
             grid-area: month;
         }
-        .whyUs {
+        .btm-card {
             grid-area: whyUs;
         }
 }
